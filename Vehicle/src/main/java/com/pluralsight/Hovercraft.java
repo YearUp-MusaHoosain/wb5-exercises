@@ -5,6 +5,15 @@ public class Hovercraft extends Vehicle{
     private float hoverHeight;
     private boolean electric;
 
+    public Hovercraft(){}
+
+    public Hovercraft(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, String vehicleType, float maxSpeed, float currentSpeed, boolean onWater, float hoverHeight, boolean electric){
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity, vehicleType, maxSpeed, currentSpeed);
+        this.onWater = onWater;
+        this.hoverHeight = hoverHeight;
+        this.electric = electric;
+    }
+
     public boolean isElectric() {
         return electric;
     }

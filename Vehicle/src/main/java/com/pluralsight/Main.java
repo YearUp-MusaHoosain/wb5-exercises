@@ -24,6 +24,8 @@ public class Main {
         kenworthW990.setColor("Orange");
         kenworthW990.setFuelCapacity(100);
 
+        Moped moped = new Moped();
+
 
     }
 }

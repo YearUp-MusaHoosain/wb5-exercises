@@ -1,15 +1,24 @@
 package com.pluralsight;
 
 public class Car extends Vehicle{
-    private String truckContent;
+    private String trunkContent;
     private String rearviewMirror;
 
-    public String getTruckContent() {
-        return truckContent;
+
+    public Car(){}
+
+    public Car(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, String vehicleType, float maxSpeed, float currentSpeed, String trunkContent, String rearviewMirror) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity, vehicleType, maxSpeed, currentSpeed);
+        this.trunkContent = trunkContent;
+        this.rearviewMirror = rearviewMirror;
     }
 
-    public void setTruckContent(String truckContent) {
-        this.truckContent = truckContent;
+    public String getTrunkContent() {
+        return trunkContent;
+    }
+
+    public void setTrunkContent(String trunkContent) {
+        this.trunkContent = trunkContent;
     }
 
     public String getRearviewMirror() {

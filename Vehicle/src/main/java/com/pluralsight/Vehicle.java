@@ -9,6 +9,18 @@ public class Vehicle {
     private String vehicleType;
     private float maxSpeed;
 
+    public Vehicle(){}
+
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, String vehicleType, float maxSpeed, float currentSpeed) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.vehicleType = vehicleType;
+        this.maxSpeed = maxSpeed;
+        this.currentSpeed = currentSpeed;
+    }
+
     public float getCurrentSpeed() {
         return currentSpeed;
     }
